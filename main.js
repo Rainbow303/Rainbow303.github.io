@@ -1,6 +1,6 @@
 function getProjects() {
  const urlGitHub =
-  "https://api.github.com/users/EluanderAnimes/repos"
+  "https://api.github.com/users/Rainbow303/repos"
  var loadingElement = document
   .getElementById('loading')
 
