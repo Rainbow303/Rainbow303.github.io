@@ -7,10 +7,10 @@ function getProjects() {
  fetch(urlGitHub, {
    method: 'GET'
   })
-  .then((response) => response.json())
-  .then((response) => {
-   console.log(response)
-   showProjects(response)
+    .then((response) => response.json())
+    .then((response) => {
+    console.log(response)
+    showProjects(response)
    loadingElement.style.display =
     'none'
   })
