@@ -11,6 +11,7 @@
     --dark2: #3a415a;
     --dark3: #566981;
     --dark4: #89a7b1;
+    --dark00: #353a50;
     --dark5: #cbdad5;
     --dark6: #2f2f46;
     --cyan1: #70e3ea;
@@ -110,7 +111,6 @@ nav{
 main{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 section{
@@ -157,7 +157,7 @@ strong{
     width: 100%;
 }
 
-:is(.second-section,.fourth-section){
+:is(.second-section,.fifth-section){
     background-color: var(--dark2);
     display: flex;
     flex-direction: column;
@@ -187,17 +187,48 @@ strong{
     cursor: default;
 }
 
+.third-section{
+    background-color: var(--dark00);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.third-section ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.third-section ul li a{
+    color: var(--dark4);
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.third-section ul li a:hover{
+    color: var(--dark5);
+    transition: .4s;
+    cursor: default;
+}
+
 .title{
     color: var(--dark5);
 }
 
-.third-section{
+.fourth-section{
     display: flex;
     flex-direction: column;
 
 }
 
-.third-section > div{
+.fourth-section > div{
     display: flex;
     gap: 4rem;
     justify-content: center;
@@ -205,12 +236,12 @@ strong{
     flex-wrap: wrap;
 }
 
-.third-section > div img{
+.fourth-section > div img{
     width: 250px;
     border-radius: 10px;
 }
 
-.third-section > div p{
+.fourth-section > div p{
     max-width: 600px;
     color: var(--white);
     text-align: justify;
@@ -244,7 +275,7 @@ footer > div{
     color: var(--dark3);
 }
 
-#my-projevts a:hover{
+#my-projects a:hover{
     color: var(--dark5);
     transition: .4s;
     cursor: pointer;
